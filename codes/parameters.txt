@@ -1,0 +1,51 @@
+########### Numeric parameters
+
+nb_samples_tau:10000
+nb_samples_z:10000
+
+tau_max:1.25e7
+z_max:1e0
+z_min:0e0
+
+########### Physical parameters
+
+c:3.00e8
+e_0:8.854e-12
+D:3.336e-30
+h_barre:1.055e-34
+
+tau_sp:6.4e8
+T1:1.64e7
+T2:1.55e6
+f0:6.67e9
+d:2.24e-30
+L:7.8e14
+n0:4.22e-6
+
+transverse_inversion:t
+constant_pumping:f
+
+random_phase:f
+random_amplitude:f
+
+########### Velocity samples parameters # BERWARE FOR THE QUANTITY n0 IS THE TOTAL DENSITY, CONSIDERING THE SUM OVER EACH VELOCITY CHANNEL
+
+nb_velocities:1
+v_sep:0
+
+########### Parallelization parameters
+
+parallelize:t
+nb_tasks:1
+
+########### Saving and displaying parameters
+
+plot_fourier:f
+nb_savings_z:1
+num_velocity_channel:0
+endfire:t
+z_save_min:0.90
+z_save_max:1
+
+save_outputs:t
+name_file:test

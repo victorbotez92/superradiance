@@ -1,0 +1,5 @@
++ date
++ srun python /gpfs/workdir/botezv/parallel_supper/codes/main_parallel.py
++ echo 'running superradiance'
++ wait
++ date

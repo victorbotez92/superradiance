@@ -1,0 +1,11 @@
+The numerical scheme used is the usual RK4
+This code is parallelizable by dividing the z_mesh into several submeshes.
+The idea is to use that the z-derivative equation yields \Delta E = int_{zinf}^{zsup} P and decompose this integral into several subintegrals
+
+EFFICIENCY TIPS:
+
+-relevant when single velocity channel:
+	calculations are carried using npy arrays. Benefits are noteworthy until the submeshes are composed of 2000 to 2500 z-samples. Below that, numpy carries calculations at a rather constant pace.
+
+TODO:
+-tests using several velocity channels (cf line 225 transverse_inversion)
